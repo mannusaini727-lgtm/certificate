@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificate Verification - Unified Mentor</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+
+/* GLOBAL */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #dfe9f3);
+  margin: 0;
+  animation: fadeIn 1s ease-in;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+@keyframes slideUp {
+  from {transform: translateY(50px); opacity:0;}
+  to {transform: translateY(0); opacity:1;}
+}
+
+@keyframes glow {
+  0% {box-shadow: 0 0 5px rgba(0,0,0,0.1);}
+  50% {box-shadow: 0 0 20px rgba(0,123,255,0.4);}
+  100% {box-shadow: 0 0 5px rgba(0,0,0,0.1);}
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.05);}
+  100% {transform: scale(1);}
+}
+
+/* HEADER */
+.header {
+  background: #0a1f44;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header img {
+  width: 50px;
+}
+
+.header h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* MAIN CONTAINER */
+.container {
+  max-width: 750px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  animation: slideUp 0.8s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* STATUS */
+.success-badge {
+  color: #28a745;
+  font-weight: 600;
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+}
+
+/* CERTIFICATE IMAGE */
+.certificate-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+  transition: 0.4s;
+}
+
+.certificate-img:hover {
+  transform: scale(1.02);
+  animation: glow 2s infinite;
+}
+
+/* INFO CARD */
+.info-card {
+  text-align: left;
+  margin-top: 25px;
+  border-radius: 10px;
+  padding: 20px;
+  background: #f9fbfd;
+  border: 1px solid #e0e6ed;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: #666;
+}
+
+.value {
+  font-weight: 600;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: #0a1f44;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #132f63;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #777;
+}
+
+</style>
+<style>
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    /* Hamburger button */
+    .menu-btn {
+      font-size: 26px;
+      cursor: pointer;
+      position: fixed;
+      right: 20px;
+      top: 20px;
+    }
+
+    /* Hidden sidebar */
+    .sidebar {
+      position: fixed;
+      right: -220px;
+      top: 0;
+      width: 200px;
+      height: 100%;
+      background-color: #333;
+      transition: 0.3s;
+      padding-top: 60px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      background-color: #575757;
+    }
+
+    /* Active class (show menu) */
+    .sidebar.active {
+      right: 0;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- 3-line button -->
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<!-- Hidden Menu -->
+<div id="sidebar" class="sidebar">
+  <a href="https://unifiedmentor.com/" class="btn">🏠 Home</a>
+ 
+  <a href="https://unifiedmentor.com/about" class="btn">ℹ️ About</a>
+  <a href="https://unifiedmentor.com/contact-us" class="btn">📞Contact</a>
+  <a href="https://unifiedmentor.graphy.com/s/authenticate" class="btn">🚪 Login</a>
+</div>
+
+<script>
+function toggleMenu() {
+  document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
+<!-- HEADER -->
+</div>
+<div class="header">
+  <img link="https://unifiedmentor.com" src="Image 1.jpg" alt="Logo">
+  <h1>Unified Mentor Pvt Ltd - Certificate Verification Portal</h1>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+
+  <p>
+    This certificate is officially issued and verified by <br>
+   <a href="https://unifiedmentor.com" target="_blank" rel="noopener noreferrer"> <strong>Unified Mentor Pvt Ltd</strong></a>
+  </p>
+
+  <!-- CERTIFICATE -->
+  <img src="Tamana Yadav-4.jpeg" class="certificate-img" alt="Certificate">
+
+  <!-- STATUS -->
+  <div class="success-badge">
+    ✓ Certificate Successfully Verified
+  </div>
+
+  <!-- DETAILS -->
+  <div class="info-card">
+    <div class="info-row">
+      <span class="label">Certificate ID:</span>
+      <span class="value">UMID02012676839</span>
+    </div>
+    <div class="info-row">
+      <span class="label">Candidate Name:</span>
+      <span class="value">Tamana Dagar
+      </span>
+    </div>
+    <div class="info-row">
+      <span class="label">Domain:</span>
+      <span class="value">Web Development Intern</span>
+    </div>
+    <div class="info-row">
+      <span class="label">Duration:</span>
+      <span class="value">4 Weeks (Evening shift)</span>
+    </div>
+    <div class="info-row">
+      <span class="label">Status:</span>
+      <span class="value" style="color:#28a745;">Completed</span>
+    </div>
+  </div>
+
+  <!-- DOWNLOAD -->
+  <a href="Tamana Yadav-4.jpeg" download class="btn">
+    ⬇ Download Certificate
+  </a>
+
+  <div class="footer">
+    This is a system-generated verification page. For queries, contact official organization.
+  </div>
+
+</div>
+</body>
+</html>
